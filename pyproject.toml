@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "filtro-do-lula"
+version = "0.1.0"
+description = ""
+authors = ["Cauê Baasch de Souza <cauebs@pm.me>"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+python-telegram-bot = "^13.13"
+Pillow = "^9.2.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+mypy = "^0.971"
+flake8 = "^5.0.4"
+black = "^22.6.0"
+isort = "^5.10.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+filtro-do-lula = "filtro_do_lula.__init__:main"
